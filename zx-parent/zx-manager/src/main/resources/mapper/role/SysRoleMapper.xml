@@ -26,4 +26,46 @@
         <include refid="findPageWhere"/>
         order by id desc
     </select>
+
+    <!-- 新增角色-->
+    <insert id="save">
+        insert into sys_role (
+            id,
+            role_name,
+            role_code,
+            description
+        ) values (
+                     #{id},
+                     #{roleName},
+                     #{roleCode},
+                     #{description}
+                 )
+    </insert>
+
+    <!-- 修改角色-->
+    <update id="update">
+        update sys_role set
+        <if test="roleName != null and roleName != ''">
+            role_name = #{roleName},
+        </if>
+        <if test="roleCode != null and roleCode != ''">
+            role_code = #{roleCode},
+        </if>
+        <if test="description != null and description != ''">
+            description = #{description},
+        </if>
+        update_time =  now()
+        where
+        id = #{id}
+    </update>
+
+    <!-- 根据id删除角色 -->
+<!--    <delete id="delete">-->
+<!--        delete from sys_role where id=#{roleId}-->
+<!--    </delete>-->
+
+    <!-- 根据id删除角色 -->
+    <update id="delete">
+        update sys_role set is_deleted=1 where id=#{roleId}
+    </update>
 </mapper>

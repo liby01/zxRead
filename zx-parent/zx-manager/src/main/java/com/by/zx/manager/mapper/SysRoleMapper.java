@@ -11,4 +11,13 @@ public interface SysRoleMapper {
 
     //按角色查询
     List<SysRole> findByPage(SysRoleDto sysRoleDto);
+
+    //新增角色
+    void save(SysRole sysRole);
+
+    //修改角色
+    void update(SysRole sysRole);
+
+    //角色删除
+    void delete(Long roleId);
 }
