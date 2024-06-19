@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="" />
+    <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +71,7 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
