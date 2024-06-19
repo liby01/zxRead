@@ -8,7 +8,6 @@ import com.by.zx.model.vo.common.Result;
 import com.by.zx.model.vo.common.ResultCodeEnum;
 import com.by.zx.model.vo.system.LoginVo;
 import com.by.zx.model.vo.system.ValidateCodeVo;
-import com.by.zx.utils.AuthContextUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
