@@ -7,9 +7,11 @@ import com.by.zx.model.vo.common.Result;
 import com.by.zx.model.vo.common.ResultCodeEnum;
 import com.github.pagehelper.PageInfo;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@Tag(name = "角色接口")
 @RestController
 @RequestMapping(value = "/admin/system/sysRole")
 public class SysRoleController {

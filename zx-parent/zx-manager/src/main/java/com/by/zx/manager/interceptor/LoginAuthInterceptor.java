@@ -57,16 +57,16 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
         AuthContextUtil.set(sysUser);
 
         //7 把redis用户信息数据更新过期时间
-        redisTemplate.expire("user:login" + token,10, TimeUnit.MINUTES);
+        redisTemplate.expire("user:login" + token,1, TimeUnit.DAYS);
         //8 放行
         return true;
     }
 
-    @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex){
-        //ThreadLocal数据删除
-        AuthContextUtil.remove();
-    }
+//    @Override
+//    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex){
+//        //ThreadLocal数据删除
+//        AuthContextUtil.remove();
+//    }
 
     //响应208状态码给前端
     private void responseNoLoginInfo(HttpServletResponse response) {

@@ -60,7 +60,7 @@
                  )
     </insert>
 
-<!--    //1 用户条件分页查询接口-->
+<!--    用户条件分页查询-->
     <select id="findByPage" resultType="com.by.zx.model.entity.system.SysUser">
         select <include refid="columns"/>
         from sys_user
@@ -80,10 +80,10 @@
         order by id desc
     </select>
 
+
     <select id="selectUserInfoByUserName" resultType="com.by.zx.model.entity.system.SysUser">
         SELECT <include refid="columns"/>
         FROM sys_user
-        WHERE username=#{userName}
---           and is_deleted=0
+        WHERE username=#{userName} AND is_deleted=0
     </select>
 </mapper>

@@ -6,14 +6,18 @@ import com.by.zx.common.exception.DiyException;
 import com.by.zx.manager.mapper.SysUserMapper;
 import com.by.zx.manager.service.SysUserService;
 import com.by.zx.model.dto.system.LoginDto;
+import com.by.zx.model.dto.system.SysUserDto;
 import com.by.zx.model.entity.system.SysUser;
 import com.by.zx.model.vo.common.ResultCodeEnum;
 import com.by.zx.model.vo.system.LoginVo;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
+import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -80,7 +84,7 @@ public class SysUserServiceImpl implements SysUserService {
         //8、把登录成功的用户信息放到redis里面
         //key:token 、 value:用户信息
         String userJson = JSON.toJSONString(sysUser);//将用户信息（对象）转换成JSON的字符串
-        redisTemplate.opsForValue().set("user:login-"+token,userJson,10,TimeUnit.MINUTES);//key、value、超时时间、单位
+        redisTemplate.opsForValue().set("user:login-"+token,userJson,1,TimeUnit.DAYS);//key、value、超时时间、单位
 
         //9、返回LoginVo对象
         LoginVo loginVo = new LoginVo();
@@ -103,6 +107,50 @@ public class SysUserServiceImpl implements SysUserService {
     public void logout(String token) {
         //根据key将redis里面的存储的用户
         redisTemplate.delete("user:login-"+token);
+    }
+
+    //用户条件分页查询
+    @Override
+    public PageInfo<SysUser> findByPage(SysUserDto sysUserDto, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum,pageSize);
+        List<SysUser> list = sysUserMapper.findByPage(sysUserDto);
+        PageInfo<SysUser> sysUserPageInfo = new PageInfo<>(list);
+        return sysUserPageInfo;
+    }
+
+    //用户添加
+    @Override
+    public void saveSysUser(SysUser sysUser) {
+        //1、判断用户名不能重复
+        String userName = sysUser.getUserName();
+        SysUser dbSysUser = sysUserMapper.selectUserInfoByUserName(userName);
+        if (dbSysUser!=null){
+            throw new DiyException(ResultCodeEnum.USER_NAME_IS_EXISTS);
+        }
+        //2、输入密码进行加密
+        String password =  DigestUtils.md5DigestAsHex(sysUser.getPassword().getBytes());
+        sysUser.setPassword(password);
+        //设置status的值 1 可用 0 不可用
+        sysUser.setStatus(1);
+        sysUserMapper.save(sysUser);
+    }
+
+    //用户修改
+    @Override
+    public void updateSysUser(SysUser sysUser) {
+        //判断用户名不能重复
+        String userName = sysUser.getUserName();
+        SysUser dbSysUser = sysUserMapper.selectUserInfoByUserName(userName);
+        if (dbSysUser!=null){
+            throw new DiyException(ResultCodeEnum.USER_NAME_IS_EXISTS);
+        }
+        sysUserMapper.update(sysUser);
+    }
+
+    //用户删除
+    @Override
+    public void deleteById(Long userId) {
+        sysUserMapper.delete(userId);
     }
 
 }

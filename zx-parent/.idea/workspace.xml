@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/role/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/role/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/target/classes/mapper/role/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/target/classes/mapper/role/SysRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/interceptor/LoginAuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/interceptor/LoginAuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/user/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/user/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/target/classes/mapper/user/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/target/classes/mapper/user/SysUserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
