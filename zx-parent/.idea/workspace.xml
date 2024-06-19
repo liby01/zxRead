@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="更改" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,10 +144,31 @@
       <workItem from="1718721660898" duration="1069000" />
       <workItem from="1718763158096" duration="495000" />
     </task>
+    <task id="LOCAL-00001" summary="更改">
+      <option name="closed" value="true" />
+      <created>1718764303258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718764303258</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更改">
+      <option name="closed" value="true" />
+      <created>1718764396060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718764396060</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,5 +190,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
