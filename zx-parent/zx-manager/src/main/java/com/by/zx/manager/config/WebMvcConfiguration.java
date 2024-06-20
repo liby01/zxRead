@@ -19,13 +19,13 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     private UserProperties userProperties;
 
     //拦截器注册
-//    @Override
-//    public void addInterceptors(InterceptorRegistry registry) {
-//        registry.addInterceptor(loginAuthInterceptor)
-////                .excludePathPatterns("/admin/system/index/login" , "/admin/system/index/generateValidateCode")
-//                .excludePathPatterns(userProperties.getNoAuthUrls())
-//                .addPathPatterns("/**");//拦截所有
-//    }
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(loginAuthInterceptor)
+//                .excludePathPatterns("/admin/system/index/login" , "/admin/system/index/generateValidateCode")
+                .excludePathPatterns(userProperties.getNoAuthUrls())
+                .addPathPatterns("/**");//拦截所有
+    }
 
     //跨域
     //解决其他方式：在controller添加@CrossOrigin注解

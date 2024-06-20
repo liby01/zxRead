@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Knife4jConfig {
 
+    //http://127.0.0.1:8501/doc.html#/home
+
     @Bean
     public GroupedOpenApi userApi() {      // 创建了一个api接口的分组
         return GroupedOpenApi.builder()

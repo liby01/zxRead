@@ -22,9 +22,16 @@ mybatis:
   config-location: classpath:/mybatis-config.xml
   mapper-locations: classpath:/mapper/*/*.xml
 
-# 自定义配置（拦截器的放行路径）
+# 自定义配置
 zx:
+  # （拦截器的放行路径）
   auth:
     noAuthUrls:
       - /admin/system/index/login
       - /admin/system/index/generateValidateCode
+# （文件服务器路径）
+  minio:
+    endpointUrl: http://127.0.0.1:9000
+    accessKey: minioadmin
+    secreKey: minioadmin
+    bucketName: zx-bucket
