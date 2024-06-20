@@ -1,6 +1,7 @@
 package com.by.zx.manager.controller;
 
 import com.by.zx.manager.service.SysUserService;
+import com.by.zx.model.dto.system.AssignRoleDto;
 import com.by.zx.model.dto.system.SysUserDto;
 import com.by.zx.model.entity.system.SysUser;
 import com.by.zx.model.vo.common.Result;
@@ -37,7 +38,7 @@ public class SysUserController {
         return Result.build(null , ResultCodeEnum.SUCCESS) ;
     }
 
-    //2 用户修改
+    //3 用户修改
     @PutMapping(value = "/updateSysUser")
     @Operation(summary = "用户修改")
     public Result updateSysUser(@RequestBody SysUser sysUser) {
@@ -45,11 +46,20 @@ public class SysUserController {
         return Result.build(null , ResultCodeEnum.SUCCESS) ;
     }
 
-    //2 用户删除
+    //4 用户删除
     @DeleteMapping(value = "/deleteById/{userId}")
     @Operation(summary = "用户删除")
     public Result deleteById(@PathVariable Long userId) {
         sysUserService.deleteById(userId);
+        return Result.build(null , ResultCodeEnum.SUCCESS) ;
+    }
+
+    //用户分配角色
+    //保存分配数据
+    @Operation(summary = "用户分配角色")
+    @PostMapping("/doAssign")
+    public Result doAssign(@RequestBody AssignRoleDto assignRoleDto) {
+        sysUserService.doAssign(assignRoleDto);
         return Result.build(null , ResultCodeEnum.SUCCESS) ;
     }
 }

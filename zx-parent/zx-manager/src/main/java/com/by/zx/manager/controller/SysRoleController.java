@@ -11,6 +11,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @Tag(name = "角色接口")
 @RestController
 @RequestMapping(value = "/admin/system/sysRole")
@@ -18,6 +20,14 @@ public class SysRoleController {
 
     @Autowired
     private SysRoleService sysRoleService ;
+
+    //查询所有角色
+    @Operation(summary = "查询所有角色")
+    @GetMapping("/findAllRoles/{userId}")
+    public Result findAllRoles(@PathVariable(value = "userId") Long userId) {
+        Map<String,Object> map = sysRoleService.findAll(userId);
+        return Result.build(map,ResultCodeEnum.SUCCESS);
+    }
 
     //1 角色列表的方法
     // current：当前页   limit：每页显示记录数

@@ -4,12 +4,18 @@
 
     <!--  映射查询到的字段 -->
     <resultMap id="sysRoleMap" type="com.by.zx.model.entity.system.SysRole" autoMapping="true"></resultMap>
-
+    
     <!-- 用于select查询公用抽取的列 -->
     <sql id="columns">
         id,role_name,role_code,description,create_time,update_time,is_deleted
     </sql>
 
+    <!--查询所有角色-->
+    <select id="findAllRoles" resultMap="sysRoleMap">
+        select <include refid="columns"/>
+        from sys_role where is_deleted=0
+    </select>
+    
     <sql id="findPageWhere">
         <where>
             <if test="roleName != null and roleName != ''">

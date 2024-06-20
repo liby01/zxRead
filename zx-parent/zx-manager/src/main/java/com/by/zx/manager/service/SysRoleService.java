@@ -4,6 +4,8 @@ import com.by.zx.model.dto.system.SysRoleDto;
 import com.by.zx.model.entity.system.SysRole;
 import com.github.pagehelper.PageInfo;
 
+import java.util.Map;
+
 public interface SysRoleService {
 
     //角色列表的方法
@@ -17,4 +19,8 @@ public interface SysRoleService {
 
     //删除角色
     void deleteById(Long roleId);
+
+    //查询所有角色
+    Map<String, Object> findAll(Long userId);
+
 }

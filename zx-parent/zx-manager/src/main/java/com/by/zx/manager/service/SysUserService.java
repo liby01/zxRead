@@ -1,6 +1,7 @@
 package com.by.zx.manager.service;
 
 
+import com.by.zx.model.dto.system.AssignRoleDto;
 import com.by.zx.model.dto.system.LoginDto;
 import com.by.zx.model.dto.system.SysUserDto;
 import com.by.zx.model.entity.system.SysUser;
@@ -29,4 +30,7 @@ public interface SysUserService {
 
     //用户删除
     void deleteById(Long userId);
+
+    //用户分配角色
+    void doAssign(AssignRoleDto assignRoleDto);
 }

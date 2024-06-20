@@ -1,6 +1,7 @@
 package com.by.zx.manager.service.impl;
 
 import com.by.zx.manager.mapper.SysRoleMapper;
+import com.by.zx.manager.mapper.SysRoleUserMapper;
 import com.by.zx.manager.service.SysRoleService;
 import com.by.zx.model.dto.system.SysRoleDto;
 import com.by.zx.model.entity.system.SysRole;
@@ -9,13 +10,18 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class SysRoleServiceImpl implements SysRoleService {
 
     @Autowired
     private SysRoleMapper sysRoleMapper;
+
+    @Autowired
+    private SysRoleUserMapper sysRoleUserMapper;
 
     //角色列表的方法
     @Override
@@ -41,9 +47,25 @@ public class SysRoleServiceImpl implements SysRoleService {
         sysRoleMapper.update(sysRole);
     }
 
+    //删除角色
     @Override
     public void deleteById(Long roleId) {
         sysRoleMapper.delete(roleId);
+    }
+
+    //查询所有角色
+    @Override
+    public Map<String, Object> findAll(Long userId) {
+        //1、查询所有角色
+        List roleList = sysRoleMapper.findAllRoles();
+
+        //2、查询用户的所有角色
+        List<Long> userAllRoleId = sysRoleUserMapper.selectRoleIdsByUserId(userId);
+
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("allRolesList", roleList);
+        map.put("sysUserRoles", userAllRoleId);
+        return map;
     }
 
 
