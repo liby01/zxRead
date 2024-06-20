@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/user/SysRoleUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/utils/MenuHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/menu/SysMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/system/SysMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/role/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/role/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/target/classes/mapper/role/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/target/classes/mapper/role/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/system/AssginRoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/system/AssignRoleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/FileUploadController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/zx-common/pom.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/zx-manager/src/main/resources/mapper/role/SysRoleMapper.xml" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -76,7 +74,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/git/zxRead/zx-parent/zx-manager/src/main/resources/mapper/user",
+    "last_opened_file_path": "F:/git/zxRead/zx-parent/zx-manager/src/main/resources/mapper/menu",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,7 +84,7 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -99,11 +97,11 @@
       <recent name="com.by.zx.manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\menu" />
       <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\user" />
       <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model\vo" />
       <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model\dto" />
       <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model\entity" />
-      <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\dome\zx-parent\zx-manager\src\main\resources\mapper\" />
@@ -161,7 +159,8 @@
       <workItem from="1718639635804" duration="38662000" />
       <workItem from="1718721660898" duration="1069000" />
       <workItem from="1718763158096" duration="495000" />
-      <workItem from="1718848554973" duration="18528000" />
+      <workItem from="1718848554973" duration="21385000" />
+      <workItem from="1718875333273" duration="16681000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />
