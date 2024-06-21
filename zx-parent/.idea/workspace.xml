@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/utils/MenuHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/menu/SysMenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/system/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/menu/SysRoleMenuMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/FileUploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../development/java/openjdk-17/lib/src.zip!/java.base/java/io/Serializable.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/zx-common/pom.xml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" root0="SKIP_INSPECTION" />
@@ -62,32 +64,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ManagerApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/git/zxRead/zx-parent/zx-manager/src/main/resources/mapper/menu",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "F:/dome/zx-parent/zx-common/common-service/src/main/java/com/by/Main.java",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/git/zxRead/zx-parent&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;F:/dome/zx-parent/zx-common/common-service/src/main/java/com/by/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.Test.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -117,7 +120,20 @@
       <recent name="com.by.zx.manager.config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ManagerApplication">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.by.zx.manager.test.Test" />
+      <module name="zx-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.by.zx.manager.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="zx-manager" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.by.zx.manager.ManagerApplication" />
@@ -134,6 +150,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ManagerApplication" />
+        <item itemvalue="应用程序.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +177,27 @@
       <workItem from="1718721660898" duration="1069000" />
       <workItem from="1718763158096" duration="495000" />
       <workItem from="1718848554973" duration="21385000" />
-      <workItem from="1718875333273" duration="16681000" />
+      <workItem from="1718875333273" duration="17376000" />
+      <workItem from="1718934533532" duration="8831000" />
+      <workItem from="1718950185846" duration="422000" />
+      <workItem from="1718950619477" duration="252000" />
+      <workItem from="1718950884719" duration="1316000" />
+      <workItem from="1718953483157" duration="213000" />
+      <workItem from="1718953709011" duration="137000" />
+      <workItem from="1718953854810" duration="45000" />
+      <workItem from="1718953907378" duration="31000" />
+      <workItem from="1718953947008" duration="774000" />
+      <workItem from="1718954737356" duration="317000" />
+      <workItem from="1718955077218" duration="138000" />
+      <workItem from="1718955306037" duration="128000" />
+      <workItem from="1718955443668" duration="499000" />
+      <workItem from="1718955956514" duration="395000" />
+      <workItem from="1718956361868" duration="419000" />
+      <workItem from="1718956796809" duration="587000" />
+      <workItem from="1718957407829" duration="744000" />
+      <workItem from="1718958166437" duration="1218000" />
+      <workItem from="1718959414939" duration="247000" />
+      <workItem from="1718959673141" duration="5609000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />
