@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/category/CategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/Product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/product/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-common/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-model/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +210,7 @@
       <workItem from="1718959673141" duration="7018000" />
       <workItem from="1719026392256" duration="27000" />
       <workItem from="1719026608544" duration="235000" />
-      <workItem from="1719026853765" duration="12101000" />
+      <workItem from="1719026853765" duration="13282000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />

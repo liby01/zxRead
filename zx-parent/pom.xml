@@ -1,65 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 定义了Maven项目对象模型(POM)文件的根元素 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- POM文件模型的版本 -->
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- 项目的groupId -->
     <groupId>com.by</groupId>
+    <!-- 项目的artifactId -->
     <artifactId>zx-parent</artifactId>
+    <!-- 项目的版本 -->
     <version>1.0-SNAPSHOT</version>
+    <!-- 项目的打包方式 -->
     <packaging>pom</packaging>
+
+    <!-- 项目的模块 -->
     <modules>
-        <module>zx-common</module>
-        <module>zx-manager</module>
-        <module>zx-model</module>
+        <module>zx-common</module> <!-- 模块zx-common -->
+        <module>zx-manager</module> <!-- 模块zx-manager -->
+        <module>zx-model</module> <!-- 模块zx-model -->
     </modules>
 
     <!-- 指定父工程 -->
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.5</version>
+        <groupId>org.springframework.boot</groupId> <!-- 父项目的groupId -->
+        <artifactId>spring-boot-starter-parent</artifactId> <!-- 父项目的artifactId -->
+        <version>3.0.5</version> <!-- 父项目的版本 -->
     </parent>
 
+    <!-- 项目的属性配置 -->
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mysql.verison>8.0.30</mysql.verison>
-        <fastjson.version>2.0.21</fastjson.version>
-        <lombok.version>1.18.20</lombok.version>
-        <mybatis.version>3.0.1</mybatis.version>
+        <maven.compiler.source>17</maven.compiler.source> <!-- 指定Java编译器的版本 -->
+        <maven.compiler.target>17</maven.compiler.target> <!-- 指定Java编译器的目标版本 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- 项目构建时使用的源文件编码 -->
+        <mysql.verison>8.0.30</mysql.verison> <!-- MySQL版本 -->
+        <fastjson.version>2.0.21</fastjson.version> <!-- Fastjson版本 -->
+        <lombok.version>1.18.20</lombok.version> <!-- Lombok版本 -->
+        <mybatis.version>3.0.1</mybatis.version> <!-- MyBatis版本 -->
     </properties>
 
-    <!-- 管理依赖，版本锁定 -->
+    <!-- 依赖管理，版本锁定 -->
     <dependencyManagement>
         <dependencies>
-            <!-- mybatis和spring boot整合的起步依赖 -->
+            <!-- MyBatis和Spring Boot整合的起步依赖 -->
             <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis.version}</version>
+                <groupId>org.mybatis.spring.boot</groupId> <!-- 依赖项的groupId -->
+                <artifactId>mybatis-spring-boot-starter</artifactId> <!-- 依赖项的artifactId -->
+                <version>${mybatis.version}</version> <!-- 依赖项的版本号 -->
             </dependency>
 
-            <!-- mysql驱动 -->
+            <!-- MySQL驱动 -->
             <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
+                <groupId>mysql</groupId> <!-- 依赖项的groupId -->
+                <artifactId>mysql-connector-java</artifactId> <!-- 依赖项的artifactId -->
+                <version>${mysql.version}</version> <!-- 依赖项的版本号 -->
             </dependency>
 
-            <!--fastjson-->
+            <!-- Fastjson库，用于处理JSON数据 -->
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
+                <groupId>com.alibaba</groupId> <!-- 依赖项的groupId -->
+                <artifactId>fastjson</artifactId> <!-- 依赖项的artifactId -->
+                <version>${fastjson.version}</version> <!-- 依赖项的版本号 -->
             </dependency>
 
-            <!-- lombok依赖 -->
+            <!-- Lombok依赖 -->
             <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
+                <groupId>org.projectlombok</groupId> <!-- 依赖项的groupId -->
+                <artifactId>lombok</artifactId> <!-- 依赖项的artifactId -->
+                <version>${lombok.version}</version> <!-- 依赖项的版本号 -->
             </dependency>
         </dependencies>
     </dependencyManagement>
