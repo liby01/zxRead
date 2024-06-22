@@ -1,5 +1,7 @@
 package com.by.zx.manager.controller;
 
+import com.by.zx.manager.service.SysMenuService;
+import com.by.zx.manager.service.SysRoleService;
 import com.by.zx.manager.service.SysUserService;
 import com.by.zx.manager.service.ValidateCodeService;
 import com.by.zx.model.dto.system.LoginDto;
@@ -7,11 +9,14 @@ import com.by.zx.model.entity.system.SysUser;
 import com.by.zx.model.vo.common.Result;
 import com.by.zx.model.vo.common.ResultCodeEnum;
 import com.by.zx.model.vo.system.LoginVo;
+import com.by.zx.model.vo.system.SysMenuVo;
 import com.by.zx.model.vo.system.ValidateCodeVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Tag(name = "登录接口") // Swagger注解，用于API文档生成，标记这个类为登录接口相关
 @RestController
@@ -26,6 +31,9 @@ public class IndexController {
 
     @Autowired
     private ValidateCodeService validateCodeService; // 自动注入ValidateCodeService实例
+
+    @Autowired
+    private SysMenuService sysMenuService; // 自动注入SysMenuService实例
 
     //生成图片验证码
     @Operation(summary = "获取验证码key、value")
@@ -63,5 +71,13 @@ public class IndexController {
         // 接收请求头中的token参数，用于从Redis中删除用户的登录信息
         sysUserService.logout(token); // 调用用户服务执行用户退出操作
         return Result.build(null,ResultCodeEnum.SUCCESS); // 返回退出成功的结果
+    }
+
+    //查询用户可以操作的菜单
+    @Operation(summary = "查询用户可以操作的菜单")
+    @GetMapping("/menus")
+    public Result menus(){
+        List<SysMenuVo> list =sysMenuService.findMenusByUserId();
+        return Result.build(list,ResultCodeEnum.SUCCESS);
     }
 }

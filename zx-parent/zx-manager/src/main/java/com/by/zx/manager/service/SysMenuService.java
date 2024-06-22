@@ -1,6 +1,7 @@
 package com.by.zx.manager.service;
 
 import com.by.zx.model.entity.system.SysMenu;
+import com.by.zx.model.vo.system.SysMenuVo;
 
 import java.util.List;
 
@@ -17,4 +18,7 @@ public interface SysMenuService {
 
     //菜单删除
     void removeById(Long id);
+
+    //查询用户可以操作的菜单
+    List<SysMenuVo> findMenusByUserId();
 }

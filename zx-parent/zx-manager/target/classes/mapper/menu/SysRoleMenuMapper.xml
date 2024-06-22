@@ -24,5 +24,9 @@
         </foreach>
     </insert>
 
+    <!--把父菜单isHalf半开状态 1-->
+    <select id="updateSysRoleMenuIsHalf">
+        update sys_role_menu srm set srm.is_half = 1 where menu_id = #{menuId}
+    </select>
 
 </mapper>

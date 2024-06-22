@@ -22,4 +22,10 @@ public interface SysMenuMapper {
 
     //根据当前菜单id，查询是否包含子菜单
     int selectCountById(Long id);
+
+    //根据userId查询可以操作的菜单
+    List<SysMenu> findMenusByUserId(Long userId);
+
+    //获取当前添加菜单的父菜单
+    SysMenu selectParentMenu(Long parentId);
 }
