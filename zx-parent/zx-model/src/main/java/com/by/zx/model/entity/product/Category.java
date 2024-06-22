@@ -1,4 +1,4 @@
-package com.by.zx.model.entity.Product;
+package com.by.zx.model.entity.product;
 
 import com.by.zx.model.entity.base.BaseEntity;
 import io.swagger.v3.oas.annotations.media.Schema;

@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/category/CategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/config/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysRoleMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysRoleMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/SysMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/menu/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/menu/SysMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/menu/SysRoleMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/menu/SysRoleMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/Product/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/product/Category.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,8 @@
       <list>
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -120,6 +117,7 @@
       <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\category" />
       <recent name="F:\dome\zx-parent\zx-manager\src\main\resources\mapper\" />
       <recent name="F:\dome\zx-parent\zx-manager\src\main\resources\mapper\user\role" />
     </key>
@@ -128,6 +126,7 @@
       <recent name="com.by.zx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.by.zx.model.entity.Product" />
       <recent name="com.by.zx.manager.mapper" />
       <recent name="com.by.zx.model.entity.system" />
       <recent name="com.by.zx.manager.config" />
@@ -213,7 +212,7 @@
       <workItem from="1718959673141" duration="7018000" />
       <workItem from="1719026392256" duration="27000" />
       <workItem from="1719026608544" duration="235000" />
-      <workItem from="1719026853765" duration="9004000" />
+      <workItem from="1719026853765" duration="12101000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />
