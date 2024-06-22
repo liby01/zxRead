@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/listener/ExcelListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/test/java/com/by/zx/manager/test/EasyExcelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/test/java/com/by/zx/manager/test/ExcelListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/vo/product/CategoryExcelVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-common/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/interceptor/LoginAuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/interceptor/LoginAuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/category/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/category/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/target/classes/mapper/category/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/target/classes/mapper/category/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/system/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/system/SysMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +35,8 @@
       <list>
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,7 +95,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/dome/spzx-parent",
+    "last_opened_file_path": "F:/git/zxRead/zx-parent/zx-model/src/main/java/com/by/zx/model/vo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +107,7 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true",
+    "应用程序.EasyExcelTest.executor": "Run",
     "应用程序.Test.executor": "Run"
   }
 }]]></component>
@@ -108,11 +120,11 @@
       <recent name="com.by.zx.manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git\zxRead\zx-parent\zx-model\src\main\java\com\by\zx\model\vo" />
       <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\menu" />
       <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\user" />
       <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model\vo" />
       <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model\dto" />
-      <recent name="F:\dome\zx-parent\zx-model\src\main\java\com\by\zx\model\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\category" />
@@ -131,6 +143,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ManagerApplication">
+    <configuration name="EasyExcelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.by.zx.manager.test.EasyExcelTest" />
+      <module name="zx-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.by.zx.manager.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.by.zx.manager.test.Test" />
       <module name="zx-manager" />
@@ -160,6 +185,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ManagerApplication" />
+        <item itemvalue="应用程序.EasyExcelTest" />
         <item itemvalue="应用程序.Test" />
       </list>
     </recent_temporary>
@@ -210,7 +236,7 @@
       <workItem from="1718959673141" duration="7018000" />
       <workItem from="1719026392256" duration="27000" />
       <workItem from="1719026608544" duration="235000" />
-      <workItem from="1719026853765" duration="13282000" />
+      <workItem from="1719026853765" duration="25084000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />

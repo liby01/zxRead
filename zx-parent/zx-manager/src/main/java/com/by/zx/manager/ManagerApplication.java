@@ -8,6 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 @SpringBootApplication
 //springboot默认扫描当前及其子包内容，Knife4jConfig配置类不在该规则下，
@@ -18,5 +21,13 @@ public class ManagerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ManagerApplication.class,args);
+        // 创建日期格式化对象
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        // 获取当前日期时间
+        Date date = new Date();
+        // 格式化日期时间
+        String formattedDate = formatter.format(date);
+        // 打印启动时间
+        System.out.println("启动时间: " + formattedDate);
     }
 }

@@ -4,7 +4,6 @@ import com.by.zx.model.entity.base.BaseEntity;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Schema(description = "系统菜单实体类")
