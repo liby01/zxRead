@@ -10,6 +10,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Tag(name = "品牌管理")
 @RestController
 @RequestMapping(value = "/admin/product/brand")
@@ -36,11 +38,27 @@ public class BrandController {
     }
 
     //修改品牌
-    @Operation(summary = "修改品牌") // Swagger注解，提供API文档说明
+    @Operation(summary = "修改品牌")
     @PutMapping(value = "/update")
     public Result update(@RequestBody Brand brand) {
         brandService.update(brand);
         return Result.build(null, ResultCodeEnum.SUCCESS);
+    }
+
+    //删除品牌
+    @Operation(summary = "删除品牌")
+    @DeleteMapping(value = "/deleteById/{id}")
+    public Result deleteById(@PathVariable("id") Long id) {
+        brandService.deleteById(id);
+        return Result.build(null, ResultCodeEnum.SUCCESS);
+    }
+
+    //查询所有品牌
+    @Operation(summary = "查询所有品牌") // Swagger注解，提供API文档说明
+    @GetMapping("/findAll")
+    public Result findAll() {
+        List<Brand> list = brandService.findAll();
+        return Result.build(list, ResultCodeEnum.SUCCESS);
     }
 
 }

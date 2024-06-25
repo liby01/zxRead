@@ -52,4 +52,16 @@
         where
         id = #{id}
     </update>
+
+    <!--删除品牌-->
+    <update id="deleteById">
+        update brand set is_deleted=1 where id=#{id}
+    </update>
+
+    <select id="findAll" resultMap="brandMap">
+        select <include refid="columns"/>
+        from brand
+        where is_deleted=0
+        order by id desc
+    </select>
 </mapper>

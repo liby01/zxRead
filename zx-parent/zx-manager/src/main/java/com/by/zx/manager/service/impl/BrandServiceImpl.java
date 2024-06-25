@@ -5,7 +5,6 @@ import com.by.zx.manager.service.BrandService;
 import com.by.zx.model.entity.product.Brand;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,5 +35,18 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public void update(Brand brand) {
         brandMapper.update(brand);
+    }
+
+    //删除品牌
+    @Override
+    public void deleteById(Long id) {
+        brandMapper.deleteById(id);
+    }
+
+    //查询所有品牌
+    @Override
+    public List<Brand> findAll() {
+        List<Brand> list = brandMapper.findAll();
+        return list;
     }
 }

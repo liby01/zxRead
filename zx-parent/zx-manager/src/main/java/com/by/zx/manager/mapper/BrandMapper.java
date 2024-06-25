@@ -16,4 +16,10 @@ public interface BrandMapper {
 
     //修改品牌
     void update(Brand brand);
+
+    //删除品牌
+    void deleteById(Long id);
+
+    //查询所有品牌
+    List<Brand> findAll();
 }

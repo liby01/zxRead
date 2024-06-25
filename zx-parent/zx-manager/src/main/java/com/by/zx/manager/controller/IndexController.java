@@ -19,8 +19,7 @@ import java.util.List;
 
 @Tag(name = "登录接口") // Swagger注解，用于API文档生成，标记这个类为登录接口相关
 @RestController
-@RequestMapping("/admin/system/index")
-// 路径映射，定义了该控制器中所有方法的基础URL路径为"/admin/system/index"
+@RequestMapping("/admin/system/index")// 路径映射，定义了该控制器中所有方法的基础URL路径为"/admin/system/index"
 //@CrossOrigin(allowCredentials = "true",originPatterns = "*",allowedHeaders = "*")可解决跨域访问，不推荐
 // 推荐添加配置类WebMvcConfiguration解决跨域请求
 public class IndexController {
