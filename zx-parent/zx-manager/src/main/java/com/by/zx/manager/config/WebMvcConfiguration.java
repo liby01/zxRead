@@ -31,10 +31,10 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     //解决其他方式：在controller添加@CrossOrigin注解
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")      // 添加路径规则
-                .allowCredentials(true)               // 是否允许在跨域的情况下传递Cookie
-                .allowedOriginPatterns("*")           // 允许请求来源的域规则
-                .allowedMethods("*")
-                .allowedHeaders("*");                 //允许所有的请求头
+        registry.addMapping("/**")               // 对所有路径进行跨域处理
+                .allowCredentials(true)                     // 是否允许在跨域的情况下传递Cookie
+                .allowedOriginPatterns("*")                 // 允许请求来源的域规则，可以是具体域名，也可以是通配符
+                .allowedMethods("*")                        // 允许所有的HTTP方法：GET, POST, PUT, DELETE等
+                .allowedHeaders("*");                       // 允许所有的请求头
     }
 }
