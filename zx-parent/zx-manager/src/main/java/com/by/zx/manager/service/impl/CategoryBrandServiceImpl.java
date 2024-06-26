@@ -3,6 +3,7 @@ package com.by.zx.manager.service.impl;
 import com.by.zx.manager.mapper.CategoryBrandMapper;
 import com.by.zx.manager.service.CategoryBrandService;
 import com.by.zx.model.dto.product.CategoryBrandDto;
+import com.by.zx.model.entity.product.Brand;
 import com.by.zx.model.entity.product.CategoryBrand;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -42,5 +43,12 @@ public class CategoryBrandServiceImpl implements CategoryBrandService {
     @Override
     public void deleteById(Long id) {
         categoryBrandMapper.deleteById(id);
+    }
+
+    //根据分类Id查询所有品牌数据
+    @Override
+    public List<Brand> findBranByCategoryId(Long categoryId) {
+        List<Brand> list = categoryBrandMapper.findBranByCategoryId(categoryId);
+        return list;
     }
 }

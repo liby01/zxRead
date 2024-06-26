@@ -26,7 +26,7 @@ public class Result<T> {
         return result;
     }
     // 通过枚举构造Result对象
-    public static <T> Result build(T body , ResultCodeEnum resultCodeEnum) {
+    public static <T> Result<T> build(T body , ResultCodeEnum resultCodeEnum) {
         return build(body , resultCodeEnum.getCode() , resultCodeEnum.getMessage()) ;
     }
 }

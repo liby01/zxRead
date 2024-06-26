@@ -23,6 +23,7 @@
         <include refid="findPageWhere"/>
         order by cb.id desc
     </select>
+
     <sql id="findPageWhere">
         <where>
             <if test="brandId != null and brandId != ''">
@@ -77,4 +78,15 @@
         where
             id = #{id}
     </update>
+
+    <!--根据分类Id查询所有品牌数据-->
+    <select id="findBranByCategoryId" resultType="com.by.zx.model.entity.product.Brand">
+        SELECT
+            b.*
+        FROM
+            category_brand cb
+                INNER JOIN brand b on b.id = cb.brand_id
+        where cb.category_id =#{categoryId} and cb.is_deleted = 0
+        ORDER BY cb.id DESC
+    </select>
 </mapper>

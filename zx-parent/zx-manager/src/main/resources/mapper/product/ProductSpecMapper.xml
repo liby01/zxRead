@@ -59,7 +59,7 @@
             id = #{id}
     </update>
 
-    <!--查询所有-->
+    <!--查询所有商品规格-->
     <select id="findAll" resultType="com.by.zx.model.entity.product.ProductSpec">
         select <include refid="columns" />
         from product_spec

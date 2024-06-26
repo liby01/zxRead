@@ -3,6 +3,8 @@ package com.by.zx.manager.service;
 import com.by.zx.model.entity.product.ProductSpec;
 import com.github.pagehelper.PageInfo;
 
+import java.util.List;
+
 public interface ProductSpecService {
 
     //商品规格条件分页查询
@@ -17,4 +19,7 @@ public interface ProductSpecService {
 
     //删除
     void deleteById(long id);
+
+    //查询所有商品规格
+    List<ProductSpec> findAll();
 }

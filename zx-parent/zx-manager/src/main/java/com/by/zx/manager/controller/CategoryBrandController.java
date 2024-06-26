@@ -2,6 +2,7 @@ package com.by.zx.manager.controller;
 
 import com.by.zx.manager.service.CategoryBrandService;
 import com.by.zx.model.dto.product.CategoryBrandDto;
+import com.by.zx.model.entity.product.Brand;
 import com.by.zx.model.entity.product.CategoryBrand;
 import com.by.zx.model.vo.common.Result;
 import com.by.zx.model.vo.common.ResultCodeEnum;
@@ -11,6 +12,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Tag(name = "品牌分类")
 @RestController
 @RequestMapping(value = "/admin/product/categoryBrand")
@@ -18,6 +21,15 @@ public class CategoryBrandController {
 
     @Autowired
     private CategoryBrandService categoryBrandService;
+
+    //根据分类Id查询所有品牌数据
+    @Operation(summary = "根据分类Id查询所有品牌数据")
+    @GetMapping(value = "findBrandByCategoryId/{categoryId}")
+    public Result findBranByCategoryId(@PathVariable(value = "categoryId") Long categoryId){
+        List<Brand> list = categoryBrandService.findBranByCategoryId(categoryId);
+        return Result.build(list, ResultCodeEnum.SUCCESS);
+    }
+
 
     //分类品牌条件分页查询
     @Operation(summary = "分类品牌条件分页查询")

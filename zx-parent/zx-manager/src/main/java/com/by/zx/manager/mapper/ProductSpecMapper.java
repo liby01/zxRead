@@ -20,5 +20,6 @@ public interface ProductSpecMapper {
     //删除
     void deleteById(Long id);
 
+    //查询所有商品规格
     List<ProductSpec> findAll();
 }

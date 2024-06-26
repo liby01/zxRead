@@ -1,6 +1,7 @@
 package com.by.zx.manager.mapper;
 
 import com.by.zx.model.dto.product.CategoryBrandDto;
+import com.by.zx.model.entity.product.Brand;
 import com.by.zx.model.entity.product.CategoryBrand;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -20,4 +21,7 @@ public interface CategoryBrandMapper {
 
     //删除
     void deleteById(Long id);
+
+    //根据分类Id查询所有品牌数据
+    List<Brand> findBranByCategoryId(Long categoryId);
 }

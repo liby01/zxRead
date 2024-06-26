@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.by.zx.manager.mapper.ProductDetailsMapper">
+
+
+    <!--新增商品详情数据-->
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        insert into product_details (
+            id,
+            product_id,
+            image_urls,
+            create_time,update_time,is_deleted
+        ) values (
+                     #{id},
+                     #{productId},
+                     #{imageUrls},
+                     now(),
+                     now(),
+                     0
+                 )
+    </insert>
+
+    <!--修改商品详细信息-->
+    <update id="updateById" >
+        update product_details set
+        <if test="productId != null and productId != ''">
+            product_id = #{productId},
+        </if>
+        <if test="imageUrls != null and imageUrls != ''">
+            image_urls = #{imageUrls},
+        </if>
+        update_time =  now()
+        where
+        id = #{id}
+    </update>
+
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        id,product_id,image_urls,create_time,update_time,is_deleted
+    </sql>
+    <!--根据ID查询商品详情数据-->
+    <select id="findProductDetailsById" resultType="com.by.zx.model.entity.product.ProductDetails">
+        select <include refid="columns" />
+        from product_details
+        where
+        product_id = #{id}
+        and is_deleted=0
+    </select>
+
+    <!--根据id删除-->
+    <update id="deleteByProductId">
+        update product_details set
+           update_time = now() ,
+           is_deleted = 1
+        where
+            product_id = #{id}
+    </update>
+</mapper>
