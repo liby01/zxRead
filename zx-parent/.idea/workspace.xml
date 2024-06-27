@@ -5,39 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/ProductUnitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/ProductDetailsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/ProductSkuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/ProductUnitMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/ProductUnitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/ProductUnitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/ProductDetailsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/ProductSkuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/ProductUnitMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/product/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/product/ProductDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/product/ProductSku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/OrderInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/OrderInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/OrderStatisticsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/OrderInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/task/OrderStatisticsTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/order/OrderInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/order/OrderStatisticsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/order/OrderStatisticsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/order/OrderInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/order/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/order/OrderStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/vo/order/OrderStatisticsVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/CategoryBrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/CategoryBrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/ProductSpecController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/ProductSpecController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/CategoryBrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/CategoryBrandMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/ProductSpecMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/ProductSpecMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/CategoryBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/CategoryBrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/ProductSpecService.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/ProductSpecService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/CategoryBrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/CategoryBrandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/ProductSpecServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/ProductSpecServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/CategoryBrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/CategoryBrandMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/ProductSpecMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/product/ProductSpecMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/vo/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/vo/common/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +36,8 @@
       <list>
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,34 +85,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ManagerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/git/zxRead/zx-parent&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;F:/dome/zx-parent/zx-common/common-service/src/main/java/com/by/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.EasyExcelTest.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.Test.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ManagerApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/dome/spzx-parent",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "F:/dome/zx-parent/zx-common/common-service/src/main/java/com/by/Main.java",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.EasyExcelTest.executor": "Run",
+    "应用程序.Test.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -154,11 +138,11 @@
       <recent name="com.by.zx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.by.zx.model.entity.product" />
-      <recent name="com.by.zx.model.entity.base" />
-      <recent name="com.by.zx.model.dto.product" />
-      <recent name="com.by.zx.model.entity.Product" />
+      <recent name="com.by.zx.model.vo.order" />
+      <recent name="com.by.zx.model.dto.order" />
+      <recent name="com.by.zx.model.entity.order" />
       <recent name="com.by.zx.manager.mapper" />
+      <recent name="com.by.zx.model.entity.product" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ManagerApplication">
@@ -261,7 +245,10 @@
       <workItem from="1719126296578" duration="6089000" />
       <workItem from="1719277859647" duration="30374000" />
       <workItem from="1719374615432" duration="8142000" />
-      <workItem from="1719383105690" duration="14581000" />
+      <workItem from="1719383105690" duration="15178000" />
+      <workItem from="1719457665387" duration="1070000" />
+      <workItem from="1719458771179" duration="98000" />
+      <workItem from="1719458879329" duration="8635000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />
