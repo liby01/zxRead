@@ -3,6 +3,7 @@ package com.by.zx.manager.service.impl;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.by.zx.common.exception.DiyException;
+import com.by.zx.common.log.annotation.Log;
 import com.by.zx.manager.mapper.SysRoleUserMapper;
 import com.by.zx.manager.mapper.SysUserMapper;
 import com.by.zx.manager.service.SysUserService;
@@ -17,6 +18,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
 import java.util.List;
@@ -153,10 +155,13 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     // 用户分配角色
+    @Log(title = "用户分配角色",businessType = 0)
+    @Transactional//添加事务
     @Override
     public void doAssign(AssignRoleDto assignRoleDto) {
         // 1、根据 userId 删除用户之前分配的角色数据
         sysRoleUserMapper.deleteByUserId(assignRoleDto.getUserId());
+
         // 2、重新分配角色
         List<Long> roleIdList = assignRoleDto.getRoleIdList(); // 遍历得到的每个角色 ID
         for (Long roleId : roleIdList) {

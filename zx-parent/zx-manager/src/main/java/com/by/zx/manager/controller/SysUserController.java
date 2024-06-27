@@ -1,5 +1,6 @@
 package com.by.zx.manager.controller;
 
+import com.by.zx.common.log.annotation.Log;
 import com.by.zx.manager.service.SysUserService;
 import com.by.zx.model.dto.system.AssignRoleDto;
 import com.by.zx.model.dto.system.SysUserDto;
@@ -31,6 +32,7 @@ public class SysUserController {
     }
 
     //2 用户添加
+    @Log(title = "用户管理:添加",businessType = 1)
     @PostMapping(value = "/saveSysUser")
     @Operation(summary = "用户添加")
     public Result saveSysUser(@RequestBody SysUser sysUser) {
@@ -56,6 +58,7 @@ public class SysUserController {
 
     //用户分配角色
     //保存分配数据
+    @Log(title = "用户管理:为用户分配角色",businessType = 1)
     @Operation(summary = "用户分配角色")
     @PostMapping("/doAssign")
     public Result doAssign(@RequestBody AssignRoleDto assignRoleDto) {

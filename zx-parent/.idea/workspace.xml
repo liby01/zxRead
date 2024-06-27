@@ -5,23 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/OrderInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/OrderInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/OrderStatisticsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/OrderInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/task/OrderStatisticsTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/order/OrderInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/order/OrderStatisticsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/order/OrderStatisticsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/order/OrderInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/order/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/order/OrderStatistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/vo/order/OrderStatisticsVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-log/src/main/java/com/by/zx/common/log/annotation/EnableLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-log/src/main/java/com/by/zx/common/log/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-log/src/main/java/com/by/zx/common/log/aspect/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-log/src/main/java/com/by/zx/common/log/enums/OperatorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-log/src/main/java/com/by/zx/common/log/service/AsyncOperLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-log/src/main/java/com/by/zx/common/log/utils/LogUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/mapper/SysOperLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/AsyncOperLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-manager/src/main/resources/mapper/log/SysOperLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/system/SysOperLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/ManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-manager/src/main/java/com/by/zx/manager/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +38,8 @@
       <list>
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -103,7 +105,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "F:/dome/zx-parent/zx-common/common-service/src/main/java/com/by/Main.java",
+    "onboarding.tips.debug.path": "F:/git/zxRead/zx-parent/zx-common/common-log/src/main/java/com/by/Main.java",
     "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -138,11 +140,11 @@
       <recent name="com.by.zx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.by.zx.common.log.utils" />
+      <recent name="com.by.zx.model.entity.system" />
       <recent name="com.by.zx.model.vo.order" />
       <recent name="com.by.zx.model.dto.order" />
       <recent name="com.by.zx.model.entity.order" />
-      <recent name="com.by.zx.manager.mapper" />
-      <recent name="com.by.zx.model.entity.product" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ManagerApplication">
@@ -248,7 +250,7 @@
       <workItem from="1719383105690" duration="15178000" />
       <workItem from="1719457665387" duration="1070000" />
       <workItem from="1719458771179" duration="98000" />
-      <workItem from="1719458879329" duration="8635000" />
+      <workItem from="1719458879329" duration="15775000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />

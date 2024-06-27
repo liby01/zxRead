@@ -1,6 +1,7 @@
 package com.by.zx.manager;
 
 
+import com.by.zx.common.log.annotation.EnableLogAspect;
 import com.by.zx.manager.properties.MinioProperties;
 import com.by.zx.manager.properties.UserProperties;
 import org.springframework.boot.SpringApplication;
@@ -9,10 +10,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-
+@EnableLogAspect//引入日志
 @SpringBootApplication
 //springboot默认扫描当前及其子包内容，Knife4jConfig配置类不在该规则下，
 @ComponentScan(basePackages = {"com.by.zx"})
