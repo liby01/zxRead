@@ -20,6 +20,9 @@
         <module>zx-common</module> <!-- 模块zx-common -->
         <module>zx-manager</module> <!-- 模块zx-manager -->
         <module>zx-model</module> <!-- 模块zx-model -->
+        <module>zx-server-gateway</module> <!-- 模块zx-server-gateway -->
+        <module>zx-service</module> <!-- 模块zx-service -->
+        <module>spzx-service-client</module> <!-- 模块spzx-service-client -->
     </modules>
 
     <!-- 指定父工程 -->
@@ -34,10 +37,13 @@
         <maven.compiler.source>17</maven.compiler.source> <!-- 指定Java编译器的版本 -->
         <maven.compiler.target>17</maven.compiler.target> <!-- 指定Java编译器的目标版本 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- 项目构建时使用的源文件编码 -->
-        <mysql.verison>8.0.30</mysql.verison> <!-- MySQL版本 -->
+        <mysql.version>8.0.30</mysql.version> <!-- MySQL版本 -->
         <fastjson.version>2.0.21</fastjson.version> <!-- Fastjson版本 -->
         <lombok.version>1.18.20</lombok.version> <!-- Lombok版本 -->
         <mybatis.version>3.0.1</mybatis.version> <!-- MyBatis版本 -->
+        <cloud.version>2022.0.2</cloud.version> <!-- Spring Cloud版本 -->
+        <alibaba.version>2022.0.0.0-RC2</alibaba.version> <!-- Spring Cloud Alibaba版本 -->
+        <alipay.version>4.8.73.ALL</alipay.version> <!-- Alipay SDK版本 -->
     </properties>
 
     <!-- 依赖管理，版本锁定 -->
@@ -64,13 +70,37 @@
                 <version>${fastjson.version}</version> <!-- 依赖项的版本号 -->
             </dependency>
 
-            <!-- Lombok依赖 -->
+            <!-- Lombok依赖，用于简化Java代码 -->
             <dependency>
                 <groupId>org.projectlombok</groupId> <!-- 依赖项的groupId -->
                 <artifactId>lombok</artifactId> <!-- 依赖项的artifactId -->
                 <version>${lombok.version}</version> <!-- 依赖项的版本号 -->
             </dependency>
+
+            <!-- Spring Cloud依赖管理 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId> <!-- 依赖项的groupId -->
+                <artifactId>spring-cloud-dependencies</artifactId> <!-- 依赖项的artifactId -->
+                <version>${cloud.version}</version> <!-- 依赖项的版本号 -->
+                <type>pom</type> <!-- 依赖项的类型为POM -->
+                <scope>import</scope> <!-- 依赖项的范围为import -->
+            </dependency>
+
+            <!-- Spring Cloud Alibaba依赖管理 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId> <!-- 依赖项的groupId -->
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId> <!-- 依赖项的artifactId -->
+                <version>${alibaba.version}</version> <!-- 依赖项的版本号 -->
+                <type>pom</type> <!-- 依赖项的类型为POM -->
+                <scope>import</scope> <!-- 依赖项的范围为import -->
+            </dependency>
+
+            <!-- 导入支付宝支付SDK -->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId> <!-- 依赖项的groupId -->
+                <artifactId>alipay-sdk-java</artifactId> <!-- 依赖项的artifactId -->
+                <version>${alipay.version}</version> <!-- 依赖项的版本号 -->
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>

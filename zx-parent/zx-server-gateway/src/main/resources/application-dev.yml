@@ -1,0 +1,26 @@
+server:
+  port: 8500 # 设置服务器的端口号
+
+spring:
+  application:
+    name: spzx-server-gateway # 设置 Spring 应用的名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 配置 Nacos 服务发现的服务器地址
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 启用通过服务发现自动生成路由
+      globalcors:
+        cors-configurations:
+          '[/**]': # 配置全局 CORS 策略，应用于所有路径
+            allowedOriginPatterns: "*" # 允许所有来源
+            allowedHeaders: "*" # 允许请求中携带的所有头信息
+            allowedMethods: "*" # 允许所有的请求方法（GET, POST, PUT, DELETE, 等）
+            maxAge: 36000 # 配置跨域请求的有效期，单位为秒
+      routes:
+        - id: service-product # 路由的 ID，唯一标识路由
+          uri: lb://service-product # 路由的目标 URI，lb 表示通过负载均衡
+          predicates:
+            - Path=/*/product/** # 路由的断言条件，匹配请求路径模式

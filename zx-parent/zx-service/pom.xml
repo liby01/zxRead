@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 定义了Maven项目对象模型(POM)文件的根元素 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- POM文件模型的版本 -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 指定父工程 -->
+    <parent>
+        <groupId>com.by</groupId> <!-- 父项目的groupId -->
+        <artifactId>zx-parent</artifactId> <!-- 父项目的artifactId -->
+        <version>1.0-SNAPSHOT</version> <!-- 父项目的版本 -->
+    </parent>
+
+    <!-- 当前项目的artifactId -->
+    <artifactId>zx-service</artifactId>
+    <!-- 当前项目的打包方式 -->
+    <packaging>pom</packaging>
+
+    <!-- 当前项目的模块 -->
+    <modules>
+        <module>service-product</module> <!-- 模块service-product -->
+        <module>service-user</module> <!-- 模块service-user -->
+        <module>service-order</module> <!-- 模块service-order -->
+    </modules>
+
+    <!-- 项目的属性配置 -->
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source> <!-- 指定Java编译器的版本 -->
+        <maven.compiler.target>17</maven.compiler.target> <!-- 指定Java编译器的目标版本 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- 项目构建时使用的源文件编码 -->
+    </properties>
+
+    <!-- 项目的依赖 -->
+    <dependencies>
+
+        <!-- Spring Boot Web starter依赖，用于构建Web应用 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 自定义的common-service依赖 -->
+        <dependency>
+            <groupId>com.by</groupId>
+            <artifactId>common-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- MyBatis的起步依赖，用于集成MyBatis和Spring Boot -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- MySQL驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- Spring Boot配置处理器，用于生成配置元数据 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional> <!-- 可选依赖 -->
+        </dependency>
+
+        <!-- PageHelper的Spring Boot起步依赖，用于分页 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+
+        <!-- 阿里巴巴Nacos服务发现的起步依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!-- 阿里巴巴Sentinel流量控制的起步依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

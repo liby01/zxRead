@@ -15,8 +15,12 @@
         minio:
             启动:minio.exe server F:\development\minio\data
             UI访问链接:http://127.0.0.1:9000
+    nacos:
+        单机启动:在bin目录下cmd,startup.cmd -m standalone
+        nacos后台:http://127.0.0.1:8848/nacos/
     
 后端接口测试:
 
     http://127.0.0.1:8501/doc.html#/home
+
     
