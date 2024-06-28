@@ -1,47 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 定义了Maven项目对象模型(POM)文件的根元素 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- POM文件模型的版本 -->
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- 指定父工程 -->
     <parent>
-        <groupId>com.by</groupId>
-        <artifactId>zx-common</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.by</groupId> <!-- 父项目的groupId -->
+        <artifactId>zx-common</artifactId> <!-- 父项目的artifactId -->
+        <version>1.0-SNAPSHOT</version> <!-- 父项目的版本 -->
     </parent>
 
+    <!-- 当前项目的artifactId -->
     <artifactId>common-util</artifactId>
 
+    <!-- 项目的属性配置 -->
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source> <!-- 指定Java编译器的版本 -->
+        <maven.compiler.target>17</maven.compiler.target> <!-- 指定Java编译器的目标版本 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- 项目构建时使用的源文件编码 -->
     </properties>
 
+    <!-- 项目的依赖 -->
     <dependencies>
-        <!-- fastjson依赖 -->
+        <!-- fastjson依赖，用于JSON解析 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <version>1.2.76</version> <!-- 这里添加一个示例版本号，可以根据需要调整 -->
         </dependency>
 
+        <!-- zx-model模块的依赖 -->
         <dependency>
             <groupId>com.by</groupId>
             <artifactId>zx-model</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!-- 文件服务器-->
+        <!-- Minio文件服务器的依赖 -->
         <dependency>
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
             <version>8.5.2</version>
         </dependency>
 
+        <!-- Spring Boot Web模块的依赖，scope为provided表示在编译和运行时不包含 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <scope>provided </scope>
+            <scope>provided</scope>
         </dependency>
-    </dependencies>
 
+
+        <!--——————————————————————————————以下是阿里云短信的所有依赖——————————————————————————————————————————-->
+        <!-- Apache HttpClient依赖 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+
+        <!-- Apache HttpCore依赖 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+
+        <!-- Apache Commons Lang依赖 -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+        <!-- Jetty Util依赖 -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>9.3.7.v20160115</version>
+        </dependency>
+        <!--——————————————————————————————以上是阿里云短信的所有依赖——————————————————————————————————————————-->
+
+    </dependencies>
 </project>

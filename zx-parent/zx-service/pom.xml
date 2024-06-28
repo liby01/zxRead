@@ -35,6 +35,12 @@
     <!-- 项目的依赖 -->
     <dependencies>
 
+        <!-- redis的起步依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!-- Spring Boot Web starter依赖，用于构建Web应用 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

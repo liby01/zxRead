@@ -25,12 +25,6 @@
 
     <!-- 项目的依赖 -->
     <dependencies>
-        <!-- Spring Boot Redis starter依赖，用于集成Redis -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
         <!-- Spring Boot Cache starter依赖，用于集成缓存 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

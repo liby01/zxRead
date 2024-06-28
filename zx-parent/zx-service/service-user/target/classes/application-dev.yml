@@ -1,0 +1,26 @@
+server:
+  port: 8512 # 设置服务器的端口号
+
+spring:
+  application:
+    name: service-user # 设置 Spring 应用的名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 配置 Nacos 服务发现的服务器地址
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource # 指定数据源类型为 HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver # 设置 MySQL JDBC 驱动程序
+    url: jdbc:mysql://localhost:3306/db_spzx?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=true # 配置数据库连接 URL，包含时区、字符编码和 SSL 设置
+    username: root # 数据库用户名
+    password: root # 数据库密码
+    # Redis的相关配置
+  data:
+    redis:
+      host: localhost # Redis 服务器的主机名
+      port: 6379 # Redis 服务器的端口号
+#  password: 1234 # Redis 服务器的密码（如果需要）
+
+mybatis:
+  config-location: classpath:mybatis-config.xml # 指定 MyBatis 配置文件的位置
+  mapper-locations: classpath:mapper/*/*.xml # 指定 MyBatis 映射文件的位置

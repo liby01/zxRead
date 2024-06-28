@@ -24,3 +24,7 @@ spring:
           uri: lb://service-product # 路由的目标 URI，lb 表示通过负载均衡
           predicates:
             - Path=/*/product/** # 路由的断言条件，匹配请求路径模式
+        - id: service-user
+          uri: lb://service-user
+          predicates:
+            - Path=/*/user/**
