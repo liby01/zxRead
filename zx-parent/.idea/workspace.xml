@@ -5,25 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/controller/SmsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/impl/SmsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/anno/EnableUserWebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/config/UserWebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/interceptor/UserLoginAuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/h5/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/h5/UserRegisterDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/user/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-server-gateway/src/main/java/com/by/zx/gateway/filter/AuthGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-service/service-cart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/controller/UserInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/UserInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/resources/mapper/user/UserInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b1b43a91-2587-4972-8029-d4be346e6c4d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f829adb7-1b1c-47de-a131-505cddb1a227.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f829adb7-1b1c-47de-a131-505cddb1a227/storage_v2/_src_/schema/db_spzx.fMWaVg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/config/Knife4jConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/config/Knife4jConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-common/common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-common/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/AuthContextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/AuthContextUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-server-gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zx-server-gateway/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-server-gateway/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-server-gateway/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-server-gateway/target/classes/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zx-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-service/service-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-service/service-product/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-product/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-service/service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-service/service-product/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-product/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/impl/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/impl/SmsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +112,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/git/zxRead/zx-parent/zx-service/service-user/src/main/resources",
+    "last_opened_file_path": "F:/git/zxRead/zx-parent/zx-common/common-service/src/main/java/com/by/zx/common",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,18 +138,18 @@
       <recent name="com.by.zx.manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git\zxRead\zx-parent\zx-common\common-service\src\main\java\com\by\zx\common" />
+      <recent name="F:\git\zxRead\zx-parent\zx-server-gateway\src\main\java\com\by\zx\gateway" />
       <recent name="F:\git\zxRead\zx-parent\zx-service\service-user\src\main\resources" />
       <recent name="F:\git\zxRead\zx-parent\zx-model\src\main\java\com\by\zx\model\vo\h5" />
       <recent name="F:\git\zxRead\zx-parent\zx-service\service-product\src\main\resources" />
-      <recent name="F:\git\zxRead\zx-parent\zx-model\src\main\java\com\by\zx\model\vo" />
-      <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git\zxRead\zx-parent\zx-service\service-user\src\main\resources\mapper\user" />
       <recent name="F:\git\zxRead\zx-parent\zx-service\service-product\src\main\resources\mapper\product" />
       <recent name="F:\git\zxRead\zx-parent\zx-service\service-product\src\main\resources\mapper\" />
       <recent name="F:\git\zxRead\zx-parent\zx-service\service-product\src\main\resources" />
       <recent name="F:\git\zxRead\zx-parent\zx-manager\src\main\resources\mapper\category" />
-      <recent name="F:\dome\zx-parent\zx-manager\src\main\resources\mapper\" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.by.zx.user.service" />
@@ -150,11 +157,11 @@
       <recent name="com.by.zx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.by.zx.model.dto.h5" />
+      <recent name="com.by.zx.model.entity.user" />
       <recent name="com.by.zx.utils" />
       <recent name="com.by.zx.model.vo.h5" />
       <recent name="com.by.zx.common.log.utils" />
-      <recent name="com.by.zx.model.entity.system" />
-      <recent name="com.by.zx.model.vo.order" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -166,7 +173,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.UserApplication">
     <configuration name="EasyExcelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.by.zx.manager.test.EasyExcelTest" />
       <module name="zx-manager" />
@@ -234,10 +241,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Spring Boot.ManagerApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ProductApplication" />
+        <item itemvalue="Spring Boot.ManagerApplication" />
         <item itemvalue="应用程序.EasyExcelTest" />
       </list>
     </recent_temporary>
@@ -297,7 +304,8 @@
       <workItem from="1719383105690" duration="15178000" />
       <workItem from="1719457665387" duration="1070000" />
       <workItem from="1719458771179" duration="98000" />
-      <workItem from="1719458879329" duration="48212000" />
+      <workItem from="1719458879329" duration="48616000" />
+      <workItem from="1719634707723" duration="11271000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />

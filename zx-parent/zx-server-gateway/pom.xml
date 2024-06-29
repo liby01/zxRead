@@ -26,6 +26,12 @@
     <!-- 项目的依赖 -->
     <dependencies>
 
+        <!-- redis的起步依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!-- 自定义的common-util依赖 -->
         <dependency>
             <groupId>com.by</groupId>

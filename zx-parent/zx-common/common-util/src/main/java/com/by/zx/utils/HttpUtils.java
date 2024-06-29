@@ -31,6 +31,8 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+
+//阿里云短信工具类
 public class HttpUtils {
 	
 	/**

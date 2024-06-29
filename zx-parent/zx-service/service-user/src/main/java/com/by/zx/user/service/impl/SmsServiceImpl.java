@@ -53,7 +53,7 @@ public class SmsServiceImpl implements SmsService {
 
         // smsSignId（短信前缀）和templateId（短信模板），可登录国阳云控制台自助申请。参考文档：http://help.guoyangyun.com/Problem/Qm.html
         querys.put("smsSignId", "2e65b1bb3d054466b82f0c9d125465e2");
-        querys.put("templateId", "908e94ccf08b4476ba6c876d13f084ad");
+        querys.put("templateId", "6f9bb40edd06454b8d911ff02770eff8");
 
         // 设置请求体
         Map<String, String> bodys = new HashMap<>();

@@ -54,6 +54,13 @@
             <scope>provided</scope> <!-- 依赖项的作用范围，表示在编译和测试时可用，但在运行时不可用 -->
         </dependency>
 
+        <!-- openfeign依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 </project>
