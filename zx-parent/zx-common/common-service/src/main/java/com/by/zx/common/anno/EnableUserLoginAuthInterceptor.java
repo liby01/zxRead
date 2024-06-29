@@ -11,6 +11,6 @@ import java.lang.annotation.Target;
 
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
-@Import(value = { UserLoginAuthInterceptor.class , UserWebMvcConfiguration.class})
-public @interface EnableUserWebMvcConfiguration {
+@Import(value = {UserLoginAuthInterceptor.class, UserWebMvcConfiguration.class})
+public @interface EnableUserLoginAuthInterceptor {
 }

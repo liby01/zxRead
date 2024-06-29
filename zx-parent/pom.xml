@@ -21,7 +21,8 @@
         <module>zx-manager</module> <!-- 模块zx-manager -->
         <module>zx-model</module> <!-- 模块zx-model -->
         <module>zx-server-gateway</module> <!-- 模块zx-server-gateway -->
-        <module>zx-service</module> <!-- 模块zx-service -->
+        <module>zx-service</module>
+        <module>zx-service-client</module> <!-- 模块zx-service -->
 <!--        <module>zx-service-client</module> &lt;!&ndash; 模块spzx-service-client &ndash;&gt;-->
     </modules>
 

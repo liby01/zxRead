@@ -8,12 +8,16 @@
     <!-- 父项目，当前项目继承其设置和依赖 -->
     <parent>
         <groupId>com.by</groupId>
-        <artifactId>zx-service</artifactId>
+        <artifactId>zx-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
     <!-- 当前项目的 artifactId -->
-    <artifactId>service-cart</artifactId>
+    <artifactId>zx-service-client</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>service-product-client</module>
+    </modules>
 
     <!-- 项目属性 -->
     <properties>
@@ -27,12 +31,35 @@
 
     <!-- 项目依赖 -->
     <dependencies>
-        <!-- 依赖于 service-product-client 模块，该模块提供了与产品服务交互的客户端功能 -->
+
+        <!-- 公用工具类依赖，多个项目之间共享 -->
         <dependency>
             <groupId>com.by</groupId>
-            <artifactId>service-product-client</artifactId>
+            <artifactId>common-util</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
+
+        <!-- 模型类依赖，多个项目之间共享 -->
+        <dependency>
+            <groupId>com.by</groupId>
+            <artifactId>zx-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Spring Cloud OpenFeign 依赖，用于声明式 REST 客户端 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <!-- Spring Cloud LoadBalancer 依赖，用于客户端负载均衡 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-loadbalancer</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

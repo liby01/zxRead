@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-util" />
+        <module name="service-product-client" />
         <module name="zx-model" />
         <module name="common-service" />
         <module name="service-product" />
@@ -20,10 +21,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="service-product-client" target="17" />
       <module name="service-user-client" target="17" />
       <module name="spzx-service-client" target="17" />
-      <module name="zx-service-client" target="17" />
       <module name="zx-util" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -35,7 +34,7 @@
       <module name="service-cart" options="-parameters" />
       <module name="service-order" options="-parameters" />
       <module name="service-product" options="-parameters" />
-      <module name="service-product-client" options="" />
+      <module name="service-product-client" options="-parameters" />
       <module name="service-user" options="-parameters" />
       <module name="service-user-client" options="" />
       <module name="spzx-service-client" options="" />
@@ -43,6 +42,7 @@
       <module name="zx-model" options="-parameters" />
       <module name="zx-server-gateway" options="-parameters" />
       <module name="zx-service" options="" />
+      <module name="zx-service-client" options="" />
     </option>
   </component>
 </project>

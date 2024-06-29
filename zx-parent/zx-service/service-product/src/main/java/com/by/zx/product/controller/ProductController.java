@@ -51,4 +51,11 @@ public class ProductController {
         // 返回商品详情，并封装到 Result 对象中，设置返回码为成功
         return Result.build(productItemVo, ResultCodeEnum.SUCCESS);
     }
+
+    //远程调用：根据skuId返回sku信息
+    @GetMapping("getBySkuId/{skuId}")
+    public ProductSku getBySkuId(@PathVariable Long skuId){
+        ProductSku productSku = productService.getBySkuId(skuId);
+        return productSku;
+    }
 }
