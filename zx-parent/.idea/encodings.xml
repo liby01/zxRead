@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/spzx-service-client/service-product-client/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spzx-service-client/service-user-client/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spzx-service-client/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spzx-service-client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-common/common-log/src/main/java" charset="UTF-8" />
@@ -23,6 +19,10 @@
     <file url="file://$PROJECT_DIR$/zx-model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-server-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zx-service-client/service-product-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zx-service-client/service-user-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zx-service-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zx-service-client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/service-cart/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/service-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/service-product/src/main/java" charset="UTF-8" />

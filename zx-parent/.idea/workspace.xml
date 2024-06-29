@@ -5,32 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0aa771-b123-480b-9548-3052e06b7dcd" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/anno/EnableUserWebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/config/UserWebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-common/common-service/src/main/java/com/by/zx/common/interceptor/UserLoginAuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/h5/UserLoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/dto/h5/UserRegisterDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-model/src/main/java/com/by/zx/model/entity/user/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-server-gateway/src/main/java/com/by/zx/gateway/filter/AuthGlobalFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-cart/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/controller/UserInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/resources/mapper/user/UserInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b1b43a91-2587-4972-8029-d4be346e6c4d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f829adb7-1b1c-47de-a131-505cddb1a227.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f829adb7-1b1c-47de-a131-505cddb1a227/storage_v2/_src_/schema/db_spzx.fMWaVg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-common/common-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/AuthContextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/AuthContextUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-common/common-util/src/main/java/com/by/zx/utils/HttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-server-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-server-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-server-gateway/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-server-gateway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spzx-service-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spzx-service-client/service-product-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spzx-service-client/service-product-client/src/main/java/com/by/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spzx-service-client/service-user-client/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spzx-service-client/service-user-client/src/main/java/com/by/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zx-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-service/service-product/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-product/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/impl/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/zx-service/service-user/src/main/java/com/by/zx/user/service/impl/SmsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-service/service-cart/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zx-service/service-cart/src/main/java/com/by/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,38 +83,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.ManagerApplication.executor": "Run",
-    "Spring Boot.ProductApplication.executor": "Run",
-    "Spring Boot.UserApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/git/zxRead/zx-parent/zx-common/common-service/src/main/java/com/by/zx/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "F:/git/zxRead/zx-parent/spzx-service-client/service-user-client/src/main/java/com/by/Main.java",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.EasyExcelTest.executor": "Run",
-    "应用程序.Test.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/git/zxRead/zx-parent/zx-service/service-cart/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;F:/git/zxRead/zx-parent/zx-service/service-cart/src/main/java/com/by/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.EasyExcelTest.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Test.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -138,11 +124,11 @@
       <recent name="com.by.zx.manager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\git\zxRead\zx-parent\zx-service\service-cart\src\main\resources" />
       <recent name="F:\git\zxRead\zx-parent\zx-common\common-service\src\main\java\com\by\zx\common" />
       <recent name="F:\git\zxRead\zx-parent\zx-server-gateway\src\main\java\com\by\zx\gateway" />
       <recent name="F:\git\zxRead\zx-parent\zx-service\service-user\src\main\resources" />
       <recent name="F:\git\zxRead\zx-parent\zx-model\src\main\java\com\by\zx\model\vo\h5" />
-      <recent name="F:\git\zxRead\zx-parent\zx-service\service-product\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\git\zxRead\zx-parent\zx-service\service-user\src\main\resources\mapper\user" />
@@ -157,11 +143,11 @@
       <recent name="com.by.zx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.by.zx.model.dto.h5" />
       <recent name="com.by.zx.model.entity.user" />
       <recent name="com.by.zx.utils" />
       <recent name="com.by.zx.model.vo.h5" />
-      <recent name="com.by.zx.common.log.utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -241,10 +227,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ManagerApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ProductApplication" />
-        <item itemvalue="Spring Boot.ManagerApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="应用程序.EasyExcelTest" />
       </list>
     </recent_temporary>
@@ -305,7 +291,7 @@
       <workItem from="1719457665387" duration="1070000" />
       <workItem from="1719458771179" duration="98000" />
       <workItem from="1719458879329" duration="48616000" />
-      <workItem from="1719634707723" duration="11271000" />
+      <workItem from="1719634707723" duration="12300000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />
@@ -384,17 +370,17 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spzx-service-client/src/main/java/com/by/Main.java</url>
+          <url>file://$PROJECT_DIR$/zx-service-client/src/main/java/com/by/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spzx-service-client/service-product-client/src/main/java/com/by/Main.java</url>
+          <url>file://$PROJECT_DIR$/zx-service-client/service-product-client/src/main/java/com/by/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spzx-service-client/service-user-client/src/main/java/com/by/Main.java</url>
+          <url>file://$PROJECT_DIR$/zx-service-client/service-user-client/src/main/java/com/by/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
