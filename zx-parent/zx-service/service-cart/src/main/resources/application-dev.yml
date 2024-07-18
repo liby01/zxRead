@@ -8,6 +8,12 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+  # Redis的相关配置
+#  data:
+#    redis:
+#      host: 110.41.167.9
+#      port: 6379
+#      password: 555086315
   data:
     redis:
       host: localhost

@@ -116,6 +116,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 //            throw new DiyException(ResultCodeEnum.LOGIN_AUTH);
 //        }
 //        UserInfo userInfo = JSON.parseObject(userJson, UserInfo.class);
+
         //从ThreadLocal获取用户信息
         UserInfo userInfo = AuthContextUtil.getUserInfo();
         //userInfo  ---- UserInfoVo

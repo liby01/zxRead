@@ -19,12 +19,15 @@
     <file url="file://$PROJECT_DIR$/zx-model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-server-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zx-service-client/service-cart-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zx-service-client/service-order-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service-client/service-product-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service-client/service-user-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service-client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/service-cart/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zx-service/service-pay/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/service-product/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/service-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zx-service/src/main/java" charset="UTF-8" />

@@ -20,4 +20,7 @@ public interface ProductSkuMapper {
 
     //同一个商品下面的sku信息列表
     List<ProductSku> findByProductId(Long productId);
+
+    //远程调用：更新商品sku销量
+    void updateSale(Long skuId, Integer num);
 }

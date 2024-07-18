@@ -1,9 +1,16 @@
 package com.by.zx.feign.product;
 
+import com.by.zx.model.dto.product.SkuSaleDto;
+import com.by.zx.model.entity.order.OrderInfo;
 import com.by.zx.model.entity.product.ProductSku;
+import io.swagger.v3.oas.annotations.Parameter;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
 
 // 使用 @FeignClient 注解声明一个 Feign 客户端，用于调用 service-product 服务
 @FeignClient(value = "service-product")
@@ -25,4 +32,8 @@ public interface ProductFeignClient {
      *
      * 返回值类型为 ProductSku，这是一个自定义的类，封装了商品 SKU 的相关信息。
      */
+
+    //远程调用：更新商品sku销量
+    @PostMapping("/api/product/updateSkuSaleNum")
+    Boolean updateSkuSaleNum(@RequestBody List<SkuSaleDto> skuSaleDtoList);
 }

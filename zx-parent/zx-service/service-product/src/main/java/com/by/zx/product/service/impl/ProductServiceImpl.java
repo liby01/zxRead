@@ -2,6 +2,7 @@ package com.by.zx.product.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.by.zx.model.dto.h5.ProductSkuDto;
+import com.by.zx.model.dto.product.SkuSaleDto;
 import com.by.zx.model.entity.product.Product;
 import com.by.zx.model.entity.product.ProductDetails;
 import com.by.zx.model.entity.product.ProductSku;
@@ -12,8 +13,10 @@ import com.by.zx.product.mapper.ProductSkuMapper;
 import com.by.zx.product.service.ProductService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.github.xiaoymin.knife4j.core.util.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -91,5 +94,17 @@ public class ProductServiceImpl implements ProductService {
     public ProductSku getBySkuId(Long skuId) {
         ProductSku productSku = productSkuMapper.getById(skuId);
         return productSku;
+    }
+
+    //远程调用：更新商品sku销量
+    @Transactional
+    @Override
+    public Boolean updateSkuSaleNum(List<SkuSaleDto> skuSaleDtoList) {
+        if(!CollectionUtils.isEmpty(skuSaleDtoList)) {
+            for(SkuSaleDto skuSaleDto : skuSaleDtoList) {
+                productSkuMapper.updateSale(skuSaleDto.getSkuId(), skuSaleDto.getNum());
+            }
+        }
+        return true;
     }
 }

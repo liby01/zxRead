@@ -7,15 +7,15 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_spzx?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://110.41.167.9:3306/db_spzx?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: root
+    password: 555086315
   # Redis的相关配置
   data:
     redis:
-      host: localhost
+      host: 110.41.167.9
       port: 6379
-#  password: 1234
+      password: 555086315
 
 # mybatis的配置
 mybatis:
@@ -31,7 +31,7 @@ zx:
       - /admin/system/index/generateValidateCode
 # （文件服务器路径）
   minio:
-    endpointUrl: http://127.0.0.1:9000
-    accessKey: minioadmin
-    secreKey: minioadmin
+    endpointUrl: http://110.41.167.9:9000
+    accessKey: liboyang
+    secreKey: 555086315
     bucketName: zx-bucket

@@ -11,17 +11,20 @@
         <module name="service-product-client" />
         <module name="zx-model" />
         <module name="common-service" />
-        <module name="service-product" />
-        <module name="service-user" />
-        <module name="service-cart" />
+        <module name="service-order-client" />
+        <module name="service-user-client" />
         <module name="zx-server-gateway" />
         <module name="common-log" />
         <module name="service-order" />
+        <module name="service-pay" />
         <module name="zx-manager" />
+        <module name="service-product" />
+        <module name="service-user" />
+        <module name="service-cart" />
+        <module name="service-cart-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="service-user-client" target="17" />
       <module name="spzx-service-client" target="17" />
       <module name="zx-util" target="17" />
     </bytecodeTargetLevel>
@@ -32,11 +35,14 @@
       <module name="common-service" options="-parameters" />
       <module name="common-util" options="-parameters" />
       <module name="service-cart" options="-parameters" />
+      <module name="service-cart-client" options="-parameters" />
       <module name="service-order" options="-parameters" />
+      <module name="service-order-client" options="-parameters" />
+      <module name="service-pay" options="-parameters" />
       <module name="service-product" options="-parameters" />
       <module name="service-product-client" options="-parameters" />
       <module name="service-user" options="-parameters" />
-      <module name="service-user-client" options="" />
+      <module name="service-user-client" options="-parameters" />
       <module name="spzx-service-client" options="" />
       <module name="zx-manager" options="-parameters" />
       <module name="zx-model" options="-parameters" />

@@ -22,8 +22,9 @@
     <modules>
         <module>service-product</module> <!-- 模块service-product -->
         <module>service-user</module> <!-- 模块service-user -->
-        <module>service-order</module>
-        <module>service-cart</module> <!-- 模块service-order -->
+        <module>service-order</module> <!-- 模块service-order -->
+        <module>service-cart</module> <!-- 模块service-cart -->
+        <module>service-pay</module> <!-- 模块service-pay -->
     </modules>
 
     <!-- 项目的属性配置 -->
